@@ -1,4 +1,4 @@
-package org.sdmtr.mini.bank.model;
+package org.sdmtr.mini.bank.model.business;
 
 public enum AccountType {
     THRIFT_BOX("Кубышка");
