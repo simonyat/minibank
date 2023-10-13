@@ -1,5 +1,7 @@
 package org.sdmtr.mini.bank.model.web.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.io.Serializable;
 
 /**
@@ -10,6 +12,9 @@ import java.io.Serializable;
  * @param error - обшика, возникшая в процессе обработки запроса.
  * @param <T> - тип ответа на запрос.
  */
-public record ResponseItem<T>(String status, T data, ResponseError error) implements Serializable {
+public record ResponseItem<T>(
+        String status,
+        @JsonInclude(value = JsonInclude.Include.NON_NULL) T data,
+        @JsonInclude(value = JsonInclude.Include.NON_NULL) ResponseError error) implements Serializable {
 
 }
