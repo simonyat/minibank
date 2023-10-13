@@ -1,14 +1,13 @@
 package org.sdmtr.mini.bank.model.business;
 
-import lombok.RequiredArgsConstructor;
+import java.io.Serializable;
 
-@RequiredArgsConstructor
-public class Client {
+public record Client(
+        String userName,
+        String firstName,
+        String surName,
+        String patronymicName,
+        String email,
+        String password) implements Serializable {
 
-    private final String userName;
-    private final String firstName;
-    private final String surName;
-    private final String patronymicName;
-    private final String email;
-    private final String password;
 }
