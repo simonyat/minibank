@@ -2,16 +2,18 @@ package org.sdmtr.mini.bank.client.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 import org.sdmtr.mini.bank.client.dto.MiniBankClientDto;
 import org.sdmtr.mini.bank.model.business.Client;
+import org.springframework.stereotype.Component;
 
 @Mapper
-public interface DtoToClientConverter {
-
-    DtoToClientConverter mapper = Mappers.getMapper(DtoToClientConverter.class);
+@Component
+public interface ClientConverter {
 
     @Mapping(source = "userName", target = "userName")
     Client dtoToClient(MiniBankClientDto clientDto);
+
+    @Mapping(source = "userName", target = "userName")
+    MiniBankClientDto clientToDto(Client client);
 
 }
