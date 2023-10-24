@@ -2,8 +2,8 @@ package org.sdmtr.mini.bank.client.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.mapstruct.factory.Mappers;
-import org.sdmtr.mini.bank.client.dto.MiniBankClientDto;
-import org.sdmtr.mini.bank.client.mapper.ClientConverter;
+import org.sdmtr.mini.bank.client.controller.dto.MiniBankClientDto;
+import org.sdmtr.mini.bank.client.controller.mapper.ClientConverter;
 import org.sdmtr.mini.bank.client.service.ClientService;
 import org.sdmtr.mini.bank.model.web.request.RequestItem;
 import org.sdmtr.mini.bank.model.web.response.ResponseItem;

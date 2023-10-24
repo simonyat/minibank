@@ -3,6 +3,7 @@ package org.sdmtr.mini.bank.client.dto;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
+import org.sdmtr.mini.bank.client.controller.dto.MiniBankClientDto;
 import org.sdmtr.mini.bank.model.web.request.RequestItem;
 
 public class MiniBankClientDtoTest {

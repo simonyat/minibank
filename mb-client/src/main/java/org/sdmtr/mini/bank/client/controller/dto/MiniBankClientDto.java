@@ -1,4 +1,4 @@
-package org.sdmtr.mini.bank.client.dto;
+package org.sdmtr.mini.bank.client.controller.dto;
 
 import java.io.Serializable;
 

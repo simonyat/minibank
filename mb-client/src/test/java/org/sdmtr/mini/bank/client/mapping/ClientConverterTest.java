@@ -2,8 +2,8 @@ package org.sdmtr.mini.bank.client.mapping;
 
 import org.junit.jupiter.api.Test;
 import org.mapstruct.factory.Mappers;
-import org.sdmtr.mini.bank.client.dto.MiniBankClientDto;
-import org.sdmtr.mini.bank.client.mapper.ClientConverter;
+import org.sdmtr.mini.bank.client.controller.dto.MiniBankClientDto;
+import org.sdmtr.mini.bank.client.controller.mapper.ClientConverter;
 import org.sdmtr.mini.bank.model.business.Client;
 
 public class ClientConverterTest {
